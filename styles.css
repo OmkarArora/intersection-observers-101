@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  width: max-content;
+  border-radius: 10px;
+  padding: 0.5rem;
+  opacity: 0;
+}
+
+.card.show {
+  opacity: 1;
+}
